@@ -1,0 +1,174 @@
+/*
+Theme Name: Action Labs Theme
+Author: Sávio Bortoline
+Description: Tema personalizado criado para o projeto Action Labs
+Version: 1.0
+*/
+/* RESET */
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f4f4f4;
+}
+
+
+/* CONTAINER PADRÃO */
+
+.container{
+  max-width:1140px;
+  margin:0 auto;
+  padding:0 20px;
+}
+
+
+/* HEADER */
+
+.site-header{
+background:#05cffc;
+padding:18px 0;
+position:relative;
+z-index:1000;
+}
+
+.header-inner{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+/* LOGO */
+
+.logo{
+color:#fff;
+border:2px solid #fff;
+padding:6px 14px;
+font-size:14px;
+font-weight:700;
+}
+
+/* MENU DESKTOP */
+
+.menu a{
+background:#fff;
+color:#01758d;
+padding:8px 18px;
+border-radius:20px;
+text-decoration:none;
+font-size:13px;
+font-weight:600;
+}
+
+/* HAMBURGER */
+
+.menu-toggle{
+display:none;
+background:none;
+border:none;
+font-size:24px;
+color:#fff;
+cursor:pointer;
+}
+@media (max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+/* ESCONDE MENU */
+
+.menu{
+position:absolute;
+top:100%;
+left:0;
+width:100%;
+background:#05cffc;
+display:none;
+flex-direction:column;
+padding:20px;
+}
+
+/* ABRIR MENU */
+
+.menu.active{
+display:flex;
+}
+
+/* LINKS */
+
+.menu a{
+background:#fff;
+color:#01758d;
+padding:12px;
+border-radius:30px;
+margin-bottom:10px;
+text-align:center;
+}
+
+}
+
+/* FOOTER */
+
+.site-footer{
+background:#05cffc;
+padding:40px 0 30px 0;
+color:#fff;
+}
+
+/* LOGO */
+
+.footer-logo{
+color:#fff;
+border:2px solid #fff;
+padding:6px 14px;
+font-size:14px;
+font-weight:700;
+display:inline-block;
+margin-bottom:12px;
+}
+
+/* LINHA */
+
+.footer-top{
+border-bottom:1px solid rgba(255,255,255,0.6);
+padding-top:10px;
+padding-bottom:20px;
+margin-top:10px;
+margin-bottom:15px;
+}
+
+/* COPYRIGHT */
+
+.footer-bottom{
+display:flex;
+justify-content:flex-end;
+margin-top:15px;
+}
+
+.footer-copy{
+font-family:'Roboto', sans-serif;
+font-weight:400;
+font-size:12px;
+line-height:16px;
+letter-spacing:0;
+vertical-align:middle;
+opacity:0.9;
+margin-top:15px;
+}
+
+@media (max-width:768px){
+
+.footer-bottom{
+justify-content:center;
+text-align:center;
+}
+
+.footer-top{
+text-align:center;
+}
+
+}
